@@ -1,0 +1,56 @@
+% Esse arquivo contém comandos que mudam a aparência do texto ou geram texto em algum lugar.
+
+% === Aproxima as sections do template original ===
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+% === Aproxima as sections do template original ===
+
+% === Fonte ===
+\setmainfont{Times New Roman}
+% === Fonte ===
+
+% === Determina nome de figura e tabela ===
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Tab.}
+% === Determina nome de figura e tabela ===
+
+% === Comandos de formatação de capa ===
+\newcommand{\estudante}[1]{%
+    {\large \textbf{#1}}\\
+    {\setlength{\baselineskip}{0.9\baselineskip}
+    \InstituicaoEstudante\\
+    \EscolaEstudante\\
+    \EnderecoEstudante\\
+    }
+}
+
+\newcommand{\coorientadores}{%
+    {\large\textbf{\CoorientadorUm%
+        \ifdefempty{\CoorientadorDois}%
+        {}%
+        {\space\&\space\CoorientadorDois}%
+    }}\\
+    {\setlength{\baselineskip}{0.9\baselineskip}
+        \InstituicaoCoorientadorUm\\
+        \LaboratorioCoorientadorUm\\
+        \EnderecoCoorientadorUm\\
+    }%
+    %\ifdefempty{\CoorientadorDois}%
+    %{}%
+    %{%
+    %    {\setlength{\baselineskip}{0.9\baselineskip}
+    %        \InstituicaoCoorientadorDois\\
+    %        \LaboratorioCoorientadorDois\\
+    %        \EnderecoCoorientadorDois\\
+    %    }%
+    %}%
+}
+\newcommand{\orientador}{%
+    {\large\textbf{\Orientador}}\\
+    {\setlength{\baselineskip}{0.9\baselineskip}
+        \InstituicaoOrientador\\
+        \LaboratorioOrientador\\
+        \EnderecoOrientador\\
+    }%
+}
+% === Comandos de formatação de capa ===

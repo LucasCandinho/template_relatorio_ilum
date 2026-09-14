@@ -1,0 +1,62 @@
+% Aqui está a capa do documento. De modo geral, não modifique esse arquivo. Tente resolver problemas modificando os comandos e definições da capa em outros arquivos.
+
+% As figuras dos templates estão em
+%internals/template/figs
+
+% A definição dos dados usados está em 
+% dados.tex
+
+% A definição dos comandos de texto e espaçamento da capa estão em
+% /internals/configs/text.tex
+
+\begin{titlepage}
+
+\begin{spacing}{1.5}
+
+    \centering
+
+    {\large \Instituicao}\\[-4pt]
+    {\large \Escola}
+
+    \vspace{0.8cm}
+
+    {\normalsize \textbf{\TipoRelatorio}}
+
+    \vspace{0.8cm}
+
+    {\large \textbf{\MakeUppercase{\TituloPortugues}}}
+
+    \vspace{0.3cm}
+
+    {\large \textbf{\MakeUppercase{\TituloIngles}}}
+
+    \noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+
+    \begin{flushleft}
+    
+        % Estudantes
+        \estudante{\EstudanteUm}
+    
+        \vspace{0.2cm}
+    
+        \estudante{\EstudanteDois}
+    
+        \vspace{0.2cm}
+    
+        \coorientadores
+    
+        \vspace{0.2cm}
+
+        \orientador
+    
+    \end{flushleft}
+
+    \begin{textblock*}{\textwidth}(2.5cm, 26.4cm)
+        \centering
+        {\small \Data}\\[-4pt]
+        {\small \Local}
+    \end{textblock*}
+
+\end{spacing}
+
+\end{titlepage}

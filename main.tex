@@ -1,0 +1,75 @@
+% Como todo documento, esse aqui também não é perfeito e eu (Lucas Candinho) não me responsabilizo por nada, em nenhum ambito, do que e feito usando esse template.
+
+% De preferência, não escreva texto no main.tex. Apenas importe arquivos de outros lugares. Aqui é quase como um HUB para todo seu texto.
+
+% DICAS ÚTEIS:
+% Se você quer importar pacotes
+% internals/configs/config.tex
+% Se você quer mudar espaçamentos e propriedades correlatas
+% internals/configs/spacing.tex
+% Se você quer mudar propriedados do texto
+% internals/configs/text.tex
+
+% Se você quer botar seu nome, dados do trabalho, etc
+% dados.tex
+
+% Se você quiser mudar a header ou o footer
+% internals/template/header_footer.tex
+% Se você quiser mudar a capa (em estrutura) confira
+% internals/template/capa.tex
+% Note que tem vários comandos envolvidos na montagem da capa
+% Leia o topo do documento capa.tex para entender melhor
+
+% === Início do Documento ===
+\documentclass[a4paper,12pt]{article}
+
+% === Carregando as configs ===
+% Pacotes
+\input{internals/configs/config}
+% Espaçamento
+\input{internals/configs/spacing}
+% Fontes e Texto
+\input{internals/configs/text}
+% === Carregando as configs ===
+
+% === Dados do Trabalho ===
+\input{dados.tex}
+% === Dados do Trabalho ===
+
+% === Template ===
+% Header e Footer
+\input{internals/template/header_footer}
+\pagestyle{empty}
+% === Template ===
+
+\begin{document}
+
+% === Capa ===
+\include{internals/template/capa}
+\clearpage
+% === Capa ===
+
+% === Resumo Geral ===
+\setstretch{1.0}
+\input{sections/resumo}
+% === Resumo Geral ===
+
+% === Conteúdo ===
+\setstretch{1.5}
+\input{sections/resumo_atividades}
+\input{sections/introdução}
+\input{sections/metodologia}
+\input{sections/resultados}
+\input{sections/conclusões}
+% === Conteúdo ===
+
+% === Referências ===
+\newpage
+
+\renewcommand{\refname}{}
+\section*{REFERÊNCIAS}
+\vspace{-3em}
+\bibliographystyle{abntex2-alf}
+\bibliography{Referências}
+% === Referências ===
+\end{document}
