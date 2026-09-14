@@ -12,7 +12,7 @@ O uso dos nomes, logotipos ou referências às instituições neste projeto não
 
 ## Como usar
 
-1. Clone ou faça o download deste repositório (releases).
+1. Clone ou faça o download deste repositório.
 
 2. Edite o arquivo `dados.tex` com as informações do seu relatório.
 
